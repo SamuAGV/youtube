@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargador YouTube → Vercel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Descargar videos de YouTube</h1>
+    <div class="download-form">
+      <input type="text" id="youtube-url" placeholder="Pega aquí la URL de YouTube">
+      <select id="quality-select">
+        <option value="highest">Máxima calidad</option>
+        <option value="lowest">Mínima calidad</option>
+        <option value="720p">HD (720p)</option>
+        <option value="480p">SD (480p)</option>
+        <option value="360p">360p</option>
+      </select>
+      <button id="download-btn">Descargar</button>
+    </div>
+    <div class="progress-container hidden">
+      <div class="progress-bar"></div>
+      <span class="progress-text">0%</span>
+    </div>
+    <div id="result" class="hidden">
+      <h3>¡Descarga completada!</h3>
+      <a id="download-link" href="#" target="_blank">Descargar archivo</a>
+      <div class="video-info"></div>
+    </div>
+    <div id="error" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
